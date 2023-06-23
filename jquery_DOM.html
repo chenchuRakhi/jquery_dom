@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"
+        integrity="sha512-4GsgvzFFry8SXj8c/VcCjjEZ+du9RZp/627AEQRVLatx6d60AUnUYXg0lGn538p44cgRs5E2GXq+8IOetJ+6ow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+    <script>
+        $(document).ready(function(){
+            $("#textsdn").click(function(){
+                alert("text:" + $("#text").text())
+            });
+            $("#html").click(function(){
+                alert("Html:" +$("#text").html())
+            });
+            $("#settext").click(function(){
+             $("#text").text("hellorakesh")
+            });
+            $("#sethtml").click(function(){
+             $("#text").html("<b>hellorakesh</b>")
+            });
+            $("#val").click(function(){
+                alert(" Welcome mr/mrs: " +$("#input_data").val())
+            });
+            
+            $("#setval").click(function(){
+            $("#input_data").val("Rakesh")
+            });
+            $("#attr").click(function(){
+                alert(" Attribute you used is : " +$("#input_data").attr())
+            });
+            
+
+        });
+    </script>
+    <p>name:<input type="text" id="input_data" > </p>
+    <button id="val">get value</button>
+    <button id="setval">set value</button>
+    <button id="Attr">get Attribute</button>
+    <p id="text">this is a html project <b>bold</b>look at one</p>
+    <button id="textsdn">Get text</button>
+    <button id="settext">set text</button>
+    <button id="html">Get html</button>
+    <button id="sethtml">set html</button>
+
+</body>
+
+</html>
